@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(./images/bg-desktop.svg);
+    background-color: hsl(257, 40%, 49%);
+
+}
+
+header {
+    margin: 3rem 4rem;
+}
+
+.container {
+    display: flex;
+    margin: 1rem 4rem;
+}
+
+.container img {
+    margin: 2rem 0;
+}
+
+.context {
+    padding: 3rem 4rem;
+    display: flex;
+    flex-direction: column;
+    padding: 3rem 2rem;
+
+}
+
+.context h1 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    color: white;
+    font-size: 36px;
+    margin: 1.5rem 0;
+
+}
+
+.context p {
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    font-weight: 400;
+    margin: 1rem 0;
+}
+
+button {
+    border-radius: 32px;
+    border: none;
+    padding: 1rem 4.8rem;
+    margin: 1rem 0;
+    box-shadow: 3px 3px 3px 3px rgb(59, 56, 56);
+
+}
+
+footer {
+    display: flex;
+    justify-content: end;
+    margin-bottom: 2rem;
+    margin-right: 8rem;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+}
+
+li .fa-brands {
+    color: white;
+}
+
+
+
+/*-------------------------------------------------*/
+@media (max-width:720px) {
+    body {
+        background-image: url('./images/bg-mobile.svg');
+        padding: 0 0 2rem;
+        width: 100%;
+    }
+
+    header img {
+        margin-left: 1rem;
+        width: 150px;
+        align-items: flex-start;
+    }
+
+    .container img {
+        background-image: url('/images/bg-mobile.svg');
+        width: 90%;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        max-width: 600px;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .container h1 {
+        font-size: 34px;
+    }
+
+    footer {
+        display: flex;
+        justify-content: center;
+        margin: 0;
+    }
+}
